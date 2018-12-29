@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" parallel ="tests" thread-count="3">
+    <test name="Chrome browser test" >
+        <parameter name="browser" value="CH"/>
+        <classes>
+            <class name="testscripttestng.HomePageTest" />
+        </classes>
+    </test>
+
+    <test name="FF browser test">
+        <parameter name="browser" value="FF"/>
+        <classes>
+            <class name="testscripttestng.AccountPageTest"/>
+        </classes>
+    </test>
+
+</suite>
